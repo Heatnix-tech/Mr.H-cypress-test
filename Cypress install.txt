@@ -1,0 +1,117 @@
+Cypress Installation on Mac
+
+
+1) Download & install nodejs  
+
+This package will install:
+	•	Node.js v18.16.0 to /usr/local/bin/node
+	•	npm v9.5.1 to /usr/local/bin/npm
+
+Make sura that /usr/local/bin is your $PATH.
+
+On Terminal check node and npm version.
+
+Node —version
+
+Npm —version
+
+2) Download & install visual studio code (VSCode)
+
+3) create a new folder for project & open in VSCode
+
+4) open cmd/terminal then execute below command(this will create package.json)
+  npm -i init     
+
+5) to install cypress 
+  npm install cypress --save -dev
+
+6) start cypress
+ npx cypress open     (or)
+ node_modules/.bin/cypress open
+
+
+Guia Inicio Cypress
+command prompt
+cd\
+node --version
+Si no hay node se instala packete node.js en nodejs.org executable.
+
+Instalar cmder.net, descomprimirlo en c y ejecutarlo.
+
+cls para ir a la carpeta ruta
+
+Instalar VSCode
+Extensions:
+Cypress Snippets
+Cypress Helper
+Run Cypress
+Cypress monitor
+Terminal
+Terminal Tabs
+Terminal Tools
+Andromeda
+Dracula
+Synthwave 84
+Shades of purple
+One dark pro
+-Visual Studio IntelliCode
+-Prettier: Mejora como se visualiza el código y ayuda a que sea más legible
+-Color Highlight :Muestra los colores en .css para verlos.
+Live Server : Recarga de forma automática el navegador con los cambios que realicemos.
+-Path Intellisense: Autocompleta rutas de archivos
+-Auto Rename Tag: Permite actualizar al mismo tiempo una pareja de tags de html
+-Material Icon Theme: Muestra iconos para identificar más fácil los tipos de archivo
+-Bracket Pair Colorizer, esta les pinta los brakets que abren y cierran funciones, así, pueden darse cuenta si les falta algo por cerrar.
+multi-command
+
+-------------------------------------------------------------------------------------------
+
+Instalar NJ + npm
+Abrir terminal de windows
+Comprobar NJ
+node -v
+nmp - v
+
+Abrir un nuevo proyecto en VSC e ir terminal en ese proyecto
+Luego se crea el Json con las dependencias para automatizar
+npm init (Coloca campos de manera manual)
+npm init -y (Coloca campos predefinidos)
+
+Instalar Cypress con el paquete de NJ
+npm install cypress --save-dev (Opcion por defecto)
+npm install cypress -D
+npm install cypress --force (Forzar instalacion)
+
+Si falla force instalar npx
+npm install -g npx
+npx install cypress --force (Forzar instalacion)
+
+----------------------------------------------------------------------------------------------
+
+Abrimos Cypress del proyecto, y crear todas las rutas y dependencias
+Npx cypress open
+node_modules\.bin\cypress open (Abrir desde la ruta)
+
+Si la ejecucion de scripts esta deshabilitada:
+Abrir Windows PowerShell
+Get-ExecutionPolicy -list
+Habilitar LocalMachine
+Set-ExecutionPolicy RemoteSigned -Force
+Windows + r: gpedit.msc, si no existe crear un punto de restauracion en windows y ejecutar como administrador.
+Ir a Plantillas administrativas\componentes de windows\Windows PowerShell\Activar Ejecucion de Secript
+Activar ejecucion de scripts, Habilitar, permitir solo scripts firmados.
+
+------------------------------------------------------------------------------------------
+
+Integracion es en donde iran las pruebas y en fixtures iran las dependencias o variables
+Que se necesitan para el proyecto
+
+Para hacer el run en la consola en Cypress.
+Primero terminar el runner de Cypress
+Ctrl + c
+npx cypress run --spec (direccion del archivo del integration "copiar relative path") --browser(.)
+Available browsers found on your system are:
+- chrome (Opcion preferida)
+- firefox
+- edge
+- electron
