@@ -86,6 +86,18 @@ Si falla force instalar npx
 npm install -g npx
 npx install cypress --force (Forzar instalacion)
 
+Instalar plugin Tab
+npm install -D cypress-plugin-tab
+
+Instalar xpath
+npm install -D cypress-xpath
+
+Instalar file upload
+npm install save-dev cypress-file-upload
+
+Instalar drag and drop
+npm install --save-dev @4tw/cypress-drag-drop
+
 ----------------------------------------------------------------------------------------------
 
 Abrimos Cypress del proyecto, y crear todas las rutas y dependencias
@@ -115,3 +127,35 @@ Available browsers found on your system are:
 - firefox
 - edge
 - electron
+
+------------------------------------------------------------------------------------------
+
+Chrome Extensions
+
+True Path
+Chro Path
+Page Ruler
+Css and Xpath checker
+Chro dev tools
+Relative xpath helper
+
+------------------------------------------------------------------------------------------
+
+Selector types config
+
+atribute scructure = exampleHTMLtag
+id = #exampleId
+class = .exampleClass
+type = [type='exampleText']
+xpath = //ExampleHTMLtag[@selectorExample='selectorType']
+Div, Button, span, p, section, etc...
+
+xpath and - or:
+xpath = //ExampleHTMLtag[@selectorExample1='selectorType' or @selectorExample2='selectorType' ]
+xpath = //ExampleHTMLtag[@selectorExample1='selectorType' and @selectorExample2='selectorType' ]
+
+xpath by text:
+xpath = //ExampleHTMLtag[text()='exampleText']
+
+that cointains:
+xpath = //ExampleHTMLtag[contains(text(), 'exampleText')]
